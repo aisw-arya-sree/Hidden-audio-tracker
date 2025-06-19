@@ -1,0 +1,77 @@
+{% extends "USER/userBase.html" %}
+{% block header %}
+{% load static %}
+<main class="main-area fix">
+    <!-- breadcrumb-area -->
+    <section class="breadcrumb-area">
+        <div class="breadcrumb-bg" data-background="{% static 'assets/img/bg/breadcrumb_bg.png' %}"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="breadcrumb-content text-center">
+                        <h3 class="title">Add Feedback</h3>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/index">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Feedback</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="contact-area">
+        <!-- <div id="map" data-background="assets/img/bg/map.jpg' %}"></div> -->
+        <div class="contact-form-wrap">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-5 col-lg-7 col-md-9 col-sm-10">
+                        <div class="section-title text-center mb-50">
+                            <h2 class="title">Enter Feedback</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xxl-8 col-xl-9 col-lg-10">
+                        <form class="contact-form text-center" method="post">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-lg-2"></div>
+                                <div class="col-md-8">
+                                    <div class="form-grp">
+                                        <input type="text" required placeholder="Enter Title" name="title">
+                                    </div>
+                                    <div class="form-grp">
+                                        <textarea name="feedback" id="" cols="30" rows="5" required
+                                            placeholder="Enter Feedback"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn">ADD</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <table class="table table-bordered text-white text-center">
+        <tr>
+            <th>User</th>
+            <th>Title</th>
+            <th>Feedback</th>
+            <th>Date</th>
+        </tr>
+        {% for i in data %}
+        <tr>
+            <td>{{i.uid.name}}</td>
+            <td>{{i.title}}</td>
+            <td>{{i.feedback}}</td>
+            <td>{{i.date}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    {% endblock %}

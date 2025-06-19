@@ -1,0 +1,119 @@
+{% extends "USER/userBase.html" %}
+{% block header %}
+{% load static %}
+
+<style>
+    .card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-width: 0;
+        word-wrap: break-word;
+        background-color: #fff;
+        background-clip: border-box;
+        border: 0 solid transparent;
+        border-radius: 0;
+    }
+
+    .mailbox-widget .custom-tab .nav-item .nav-link {
+        border: 0;
+        color: #fff;
+        border-bottom: 3px solid transparent;
+    }
+
+    .mailbox-widget .custom-tab .nav-item .nav-link.active {
+        background: 0 0;
+        color: #fff;
+        border-bottom: 3px solid #2cd07e;
+    }
+
+    .no-wrap td,
+    .no-wrap th {
+        white-space: nowrap;
+    }
+
+    .table td,
+    .table th {
+        padding: .9375rem .4rem;
+        vertical-align: top;
+        border-top: 1px solid rgba(120, 130, 140, .13);
+    }
+
+    .font-light {
+        font-weight: 300;
+    }
+</style>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<main class="main-area fix">
+    <!-- breadcrumb-area -->
+    <section class="breadcrumb-area">
+        <div class="breadcrumb-bg" data-background="{% static 'assets/img/bg/breadcrumb_bg.png' %}"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="breadcrumb-content text-center">
+                        <h3 class="title">Inbox</h3>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/userHome">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Inbox</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <hr> -->
+
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-hover v-middle mb-0 font-14" style="border-color: #2cd07e;">
+                <thead style="background-color: rgba(197, 197, 197, 0.444);">
+                    <tr>
+                        <td></td>
+                        <td>
+                            <span class="mb-0 text-warning fw-bolder">From</span>
+                        </td>
+                        <td>
+                            <a class="link" href="javascript: void(0)">
+                                <span class="text-warning font-medium mr-2 fw-bolder">Subject</span>
+                            </a>
+                        </td>
+                        <td></td>
+                        <td class="text-warning fw-bolder">Date</td>
+                        <td class="text-warning fw-bolder">Action</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in inboxData %}
+                    <a href="">
+                        <tr>
+                            <td></td>
+                            <td>
+                                <span class="mb-0 text-white">{{i.sender.name}}</span>
+                            </td>
+                            <td>
+                                <a class="link" href="javascript: void(0)">
+                                    <span class="text-white">{{i.subject}}</span>
+                                </a>
+                            </td>
+                            {% if i.attachment %}
+                            <td><i class="fa fa-paperclip text-white"></i></td>
+                            {% else %}
+                            <td></td>
+                            {% endif %}
+                            <td class="text-white">{{i.date}}</td>
+                            <td>
+                                <a href="/readMail?id={{i.id}}">Open</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    {% endblock %}

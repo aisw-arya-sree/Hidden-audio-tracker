@@ -1,0 +1,995 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SecureBlendX</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.png' %}">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/odometer.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/default.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+</head>
+
+<body>
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_three"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader-end -->
+
+    <!-- Scroll-top -->
+    <button class="scroll-top scroll-to-target" data-target="html">
+        <i class="fas fa-angle-up"></i>
+    </button>
+    <!-- Scroll-top-end-->
+
+    <!-- header-area -->
+    <header>
+        <div id="sticky-header" class="menu-area transparent-header">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+                        <div class="menu-wrap">
+                            <nav class="menu-nav">
+                                <div class="logo">
+                                    <a href="/userHome"> <h2 style="color: goldenrod;">SecureBlendX</h2></a>
+                                </div>
+                                <div class="navbar-wrap main-menu d-none d-lg-flex">
+                                    <ul class="navigation">
+                                        <li class="active"><a href="/userHome">Home</a></li>
+                                        <li><a href="/profile">Profile</a></li>
+                                        <li class="menu-item-has-children"><a href="#">Mail</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="/compose">Compose</a></li>
+                                                <li><a href="/inbox">Inbox</a></li>
+                                                <!-- <li><a href="/drafts">Drafts</a></li> -->
+                                            </ul>
+                                        </li>
+                                        <li><a href="/addFeedback">Feedback</a></li>
+                                        <li><a href="/login">Logout</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-social">
+                                    <!-- <ul>
+                                        <li><a href="#"><i class="flaticon-facebook"></i></a></li>
+                                        <li><a href="#"><i class="flaticon-twitter"></i></a></li>
+                                        <li><a href="#"><i class="flaticon-linkedin"></i></a></li>
+                                    </ul> -->
+                                </div>
+                                <div class="offcanvas-btn">
+                                    <!-- <a href="#"><img src="{% static 'assets/img/icons/dots.png' %}" alt="Icon"></a> -->
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- Mobile Menu  -->
+                        <div class="mobile-menu">
+                            <nav class="menu-box">
+                                <div class="close-btn"><i class="fas fa-times"></i></div>
+                                <div class="nav-logo"><a href="/index"><img
+                                            src="{% static 'assets/img/logo/logo.png' %}" alt="" title=""></a>
+                                </div>
+                                <div class="menu-outer">
+                                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                                </div>
+                                <div class="social-links">
+                                    <ul class="clearfix">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="menu-backdrop"></div>
+                        <!-- End Mobile Menu -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- offCanvas-start -->
+        <div class="offCanvas-wrap">
+            <div class="offCanvas-toggle"><img src="{% static 'assets/img/icons/cross.svg" alt="icon"></div>
+            <div class="offCanvas-body">
+                <div class="offCanvas-content">
+                    <h3 class="title">Digital safety <span>starts here</span> for both commercial and personal</h3>
+                </div>
+                <div class="offcanvas-contact footer-contact-info">
+                    <h4 class="number">+1 488 246 5357</h4>
+                    <h4 class="email">cycure.agency@mail.com</h4>
+                    <p>3828 Delmas Terrace, Culver City, <br> CA, United States</p>
+                    <ul class="footer-social list-wrap">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="offCanvas-overlay"></div>
+        <!-- offCanvas-end -->
+
+    </header>
+    <!-- header-area-end -->
+
+
+    <!-- main-area -->
+    <main class="main-area fix">
+
+        <!-- banner-area -->
+        <section class="banner-area banner-three-bg" data-background="assets/img/banner/background.jpg' %}">
+            <div id="particles-js"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-10">
+                        <div class="banner-three-content text-center">
+                            <h2 class="heading wow fadeInUp" data-wow-delay=".2s">We Help to Protect Modern
+                                <span>Information</span> From Hackers
+                            </h2>
+                            <!-- <a href="contact.html" class="btn wow fadeInUp" data-wow-delay=".6s">
+                                <span class="text">Chat With Us</span>
+                                <span class="shape"></span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner-area-end -->
+
+        <!-- brand-area -->
+        <section class="brand-area brand-three-area">
+            <div class="container">
+                <div class="brand-wrap">
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="brand-title">Trusted by more than <span>+750</span> companies around the globe
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="row brand-active">
+                        <div class="col-2">
+                            <div class="brand-item">
+                                <a href="#"><img src="{% static 'assets/img/brand/brand_01.png' %}"
+                                        alt="Brand Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="brand-item">
+                                <a href="#"><img src="{% static 'assets/img/brand/brand_02.png' %}"
+                                        alt="Brand Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="brand-item">
+                                <a href="#"><img src="{% static 'assets/img/brand/brand_03.png' %}"
+                                        alt="Brand Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="brand-item">
+                                <a href="#"><img src="{% static 'assets/img/brand/brand_04.png' %}"
+                                        alt="Brand Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="brand-item">
+                                <a href="#"><img src="{% static 'assets/img/brand/brand_05.png' %}"
+                                        alt="Brand Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="brand-item">
+                                <a href="#"><img src="{% static 'assets/img/brand/brand_02.png' %}"
+                                        alt="Brand Logo"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- brand-area-end -->
+
+        <!-- services-area -->
+        <!-- <section class="services-area services-three-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="section-title text-center mb-55">
+                            <h2 class="title">We Provide Professional <br> Security Solutions</h2>
+                        </div>
+                        <div class="services-items-wrapper">
+                            <ul class="list-wrap">
+                                <li>
+                                    <a href="services-details.html">
+                                        <div class="top-content">
+                                            <i class="flaticon-spyware"></i>
+                                            <span>Spyware Protection</span>
+                                        </div>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">
+                                        <div class="top-content">
+                                            <i class="flaticon-cloud-computing"></i>
+                                            <span>Fast Cloud Backup</span>
+                                        </div>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">
+                                        <div class="top-content">
+                                            <i class="flaticon-hosting"></i>
+                                            <span>Database Security</span>
+                                        </div>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">
+                                        <div class="top-content">
+                                            <i class="flaticon-credit-card"></i>
+                                            <span>Transaction Security</span>
+                                        </div>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">
+                                        <div class="top-content">
+                                            <i class="flaticon-concept"></i>
+                                            <span>Spambot Shield</span>
+                                        </div>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">
+                                        <div class="top-content">
+                                            <i class="flaticon-brain"></i>
+                                            <span>A.I. Threat Learning</span>
+                                        </div>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">
+                                        <div class="top-content">
+                                            <i class="flaticon-hacker"></i>
+                                            <span>Client Protection</span>
+                                        </div>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">
+                                        <div class="top-content">
+                                            <i class="flaticon-backup"></i>
+                                            <span>Scheduled Backups</span>
+                                        </div>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">
+                                        <div class="top-content">
+                                            <i class="flaticon-connection"></i>
+                                            <span>Network Scanning</span>
+                                        </div>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">
+                                        <div class="top-content">
+                                            <i class="flaticon-data-protection"></i>
+                                            <span>CPU Threats Safety</span>
+                                        </div>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">
+                                        <div class="top-content">
+                                            <i class="flaticon-seo-and-web"></i>
+                                            <span>Disaster Recovery</span>
+                                        </div>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">
+                                        <div class="top-content">
+                                            <i class="flaticon-face-recognition"></i>
+                                            <span>Face Recognition</span>
+                                        </div>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">
+                                        <div class="top-content">
+                                            <i class="flaticon-map"></i>
+                                            <span>Location Tracking</span>
+                                        </div>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">
+                                        <div class="top-content">
+                                            <i class="flaticon-coding"></i>
+                                            <span>Terminal Protection</span>
+                                        </div>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="services-details.html">
+                                        <div class="top-content">
+                                            <i class="flaticon-approved"></i>
+                                            <span>Logistic Security</span>
+                                        </div>
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- services-area-end -->
+
+        <!-- about-area -->
+        <!-- <section class="about-area security-area security-two-area">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="about-img">
+                            <img src="{% static 'assets/img/others/security_img.png' %}" class="wow fadeInLeft"
+                                data-wow-delay=".2s" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-8 col-md-11">
+                        <div class="about-content">
+                            <h2 class="title">Powerful Cyber Security Operation Center</h2>
+                            <ul class="about-list security-list">
+                                <li>Managed Web Application</li>
+                                <li>Free Delivery Services</li>
+                                <li>SIEM Threat Detection</li>
+                                <li>Provide Security Services</li>
+                                <li>Website Security Services</li>
+                                <li>Content Delivery Network</li>
+                                <li>24/7 Hours services</li>
+                                <li>Website Hack Repair</li>
+                                <li>Instant Malware Removal</li>
+                                <li>Security Management</li>
+                                <li>Database Security</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- about-area-end -->
+
+        <!-- team-area -->
+        <!-- <section class="team-area team-bg team-two-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-8 col-md-10">
+                        <div class="section-title text-center mb-55">
+                            <h2 class="title">Expert Team Who Are Behind the Whole Security</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-wrapper">
+                    <div class="row justify-content-center justify-content-lg-between">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="{% static 'assets/img/team/team_01.jpg' %}" alt="img">
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="name">Morgan Cooper</h4>
+                                    <span class="designation">Ceo & founder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="{% static 'assets/img/team/team_02.jpg' %}" alt="img">
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="name">Amanda Brown</h4>
+                                    <span class="designation">Co-founder</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="{% static 'assets/img/team/team_03.jpg' %}" alt="img">
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="name">Harry Peterson</h4>
+                                    <span class="designation">Security Head</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="{% static 'assets/img/team/team_04.jpg' %}" alt="img">
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="name">Michel Donald</h4>
+                                    <span class="designation">Programmer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="{% static 'assets/img/team/team_05.jpg' %}" alt="img">
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="name">David Harrison</h4>
+                                    <span class="designation">Programmer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="{% static 'assets/img/team/team_06.jpg' %}" alt="img">
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="name">Duglas Rovland</h4>
+                                    <span class="designation">Cyber analyst</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="{% static 'assets/img/team/team_07.jpg' %}" alt="img">
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="name">Kiara Montesino</h4>
+                                    <span class="designation">Programmer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="team-item">
+                                <div class="team-thumb">
+                                    <img src="{% static 'assets/img/team/team_08.jpg' %}" alt="img">
+                                </div>
+                                <div class="team-content">
+                                    <h4 class="name">Christina Jonson</h4>
+                                    <span class="designation">Ethical Hacker</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="team-btn text-center">
+                            <a href="team.html" class="btn btn-style-two">
+                                <span class="text">Join our team</span>
+                                <span class="shape"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- team-area-end -->
+
+        <!-- help-area -->
+        <!-- <section class="cycure-help-area cycure-help-two-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-7">
+                        <div class="cycure-help-img">
+                            <img src="{% static 'assets/img/others/help_img.png' %}" class="wow fadeInLeft"
+                                data-wow-delay=".2s" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-8">
+                        <div class="section-title mb-25">
+                            <h2 class="title">Experts Help You to Enhance Your Cyber Defenses</h2>
+                        </div>
+                        <ul class="nav nav-tabs" id="helpTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="banking-tab" data-bs-toggle="tab"
+                                    data-bs-target="#banking" type="button" role="tab" aria-controls="banking"
+                                    aria-selected="true">Banking</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="manufacturing-tab" data-bs-toggle="tab"
+                                    data-bs-target="#manufacturing" type="button" role="tab"
+                                    aria-controls="manufacturing" aria-selected="false">Manufacturing</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="oil-tab" data-bs-toggle="tab" data-bs-target="#oil"
+                                    type="button" role="tab" aria-controls="oil" aria-selected="false">Oil And
+                                    Gas</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="insurance-tab" data-bs-toggle="tab"
+                                    data-bs-target="#insurance" type="button" role="tab" aria-controls="insurance"
+                                    aria-selected="false">Insurance</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="healthcare-tab" data-bs-toggle="tab"
+                                    data-bs-target="#healthcare" type="button" role="tab" aria-controls="healthcare"
+                                    aria-selected="false">Healthcare</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="helpTabContent">
+                            <div class="tab-pane fade show active" id="banking" role="tabpanel"
+                                aria-labelledby="banking-tab">
+                                <div class="help-content">
+                                    <h4 class="title">Banking Security</h4>
+                                    <ul class="about-list">
+                                        <li>Focus on The Basics</li>
+                                        <li>Educate Customers</li>
+                                        <li>Tighten Internal Controls</li>
+                                        <li>Be Proactive</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="manufacturing" role="tabpanel"
+                                aria-labelledby="manufacturing-tab">
+                                <div class="help-content">
+                                    <h4 class="title">Manufacturing</h4>
+                                    <p>Nam libero tempore, cum soluta nobis eligendi optio cumque nihil quo minus id
+                                        quod maxime placeat facere possimus assumenda omnis dolor repellendus.
+                                        Temporibus autem quibusdam et aut officiis nam libero tempore itaque earum rerum
+                                        hic tenetur</p>
+                                    <ul class="about-list">
+                                        <li>Focus on The Basics</li>
+                                        <li>Educate Customers</li>
+                                        <li>Tighten Internal Controls</li>
+                                        <li>Be Proactive</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="oil" role="tabpanel" aria-labelledby="oil-tab">
+                                <div class="help-content">
+                                    <h4 class="title">Oil And Gas</h4>
+                                    <p>Nam libero tempore, cum soluta nobis eligendi optio cumque nihil quo minus id
+                                        quod maxime placeat facere possimus assumenda omnis dolor repellendus.
+                                        Temporibus autem quibusdam et aut officiis nam libero tempore itaque earum rerum
+                                        hic tenetur</p>
+                                    <ul class="about-list">
+                                        <li>Focus on The Basics</li>
+                                        <li>Educate Customers</li>
+                                        <li>Tighten Internal Controls</li>
+                                        <li>Be Proactive</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="insurance" role="tabpanel" aria-labelledby="insurance-tab">
+                                <div class="help-content">
+                                    <h4 class="title">Insurance Security</h4>
+                                    <p>Nam libero tempore, cum soluta nobis eligendi optio cumque nihil quo minus id
+                                        quod maxime placeat facere possimus assumenda omnis dolor repellendus.
+                                        Temporibus autem quibusdam et aut officiis nam libero tempore itaque earum rerum
+                                        hic tenetur</p>
+                                    <ul class="about-list">
+                                        <li>Focus on The Basics</li>
+                                        <li>Educate Customers</li>
+                                        <li>Tighten Internal Controls</li>
+                                        <li>Be Proactive</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="healthcare" role="tabpanel" aria-labelledby="healthcare-tab">
+                                <div class="help-content">
+                                    <h4 class="title">Healthcare Security</h4>
+                                    <p>Nam libero tempore, cum soluta nobis eligendi optio cumque nihil quo minus id
+                                        quod maxime placeat facere possimus assumenda omnis dolor repellendus.
+                                        Temporibus autem quibusdam et aut officiis nam libero tempore itaque earum rerum
+                                        hic tenetur</p>
+                                    <ul class="about-list">
+                                        <li>Focus on The Basics</li>
+                                        <li>Educate Customers</li>
+                                        <li>Tighten Internal Controls</li>
+                                        <li>Be Proactive</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- help-area-end -->
+        <br><br><br>
+        <!-- marquee-area -->
+        <div class="marquee-area">
+            <div class="marquee-wrap">
+                <span>We are always ready to protect your data</span>
+                <span>We are always ready to protect your data</span>
+                <span>We are always ready to protect your data</span>
+                <span>We are always ready to protect your data</span>
+                <span>We are always ready to protect your data</span>
+                <span>We are always ready to protect your data</span>
+            </div>
+        </div>
+        <!-- marquee-area-end -->
+
+        <!-- testimonial-area -->
+        <section class="testimonial-area testimonial-two-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-8 col-lg-10">
+                        <div class="testimonial-active">
+                            <div class="testimonial-item text-center">
+                                <div class="testi-quote">
+                                    <!-- <img src="{% static 'assets/img/icons/quote.png' %}" alt="icon"> -->
+                                </div>
+                                <!-- <p>“Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
+                                    minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis
+                                    dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum
+                                    necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
+                                    recusandae”</p> -->
+                                <div class="testimonial-avatar">
+                                    <!-- <div class="testi-avatar-img">
+                                        <img src="{% static 'assets/img/others/avatar01.png' %}" alt="img">
+                                    </div>
+                                    <div class="testi-avatar-info">
+                                        <h5 class="name">Peterson / Ceo & Founder</h5>
+                                        <div class="testi-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="testimonial-item text-center">
+                                <div class="testi-quote">
+                                    <!-- <img src="{% static 'assets/img/icons/quote.png' %}" alt="icon"> -->
+                                </div>
+                                <!-- <p>“Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
+                                    minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis
+                                    dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum
+                                    necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
+                                    recusandae”</p> -->
+                                <div class="testimonial-avatar">
+                                    <!-- <div class="testi-avatar-img">
+                                        <img src="{% static 'assets/img/others/avatar02.png' %}" alt="img">
+                                    </div>
+                                    <div class="testi-avatar-info">
+                                        <h5 class="name">Rensona / Ceo & Founder</h5>
+                                        <div class="testi-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <div class="testimonial-item text-center">
+                                <div class="testi-quote">
+                                    <!-- <img src="{% static 'assets/img/icons/quote.png' %}" alt="icon"> -->
+                                </div>
+                                <!-- <p>“Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo
+                                    minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis
+                                    dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum
+                                    necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non
+                                    recusandae”</p> -->
+                                <div class="testimonial-avatar">
+                                    <!-- <div class="testi-avatar-img">
+                                        <img src="{% static 'assets/img/others/avatar03.png' %}" alt="img">
+                                    </div>
+                                    <div class="testi-avatar-info">
+                                        <h5 class="name">Markline / Ceo & Founder</h5>
+                                        <div class="testi-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- testimonial-area-end -->
+
+        <!-- blog-area -->
+        <!-- <section class="blog-area blog-two-area">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-6 col-lg-7 col-md-10">
+                        <div class="section-title text-center mb-60">
+                            <h2 class="title">Get the Latest Articles and News From Our Blog</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row blog-active">
+                    <div class="col-xl-3">
+                        <div class="blog-post-item">
+                            <div class="blog-post-thumb">
+                                <a href="blog-details.html"><img src="{% static 'assets/img/blog/blog_thumb01.jpg' %}"
+                                        alt="img"></a>
+                            </div>
+                            <div class="blog-post-content">
+                                <h3 class="title"><a href="blog-details.html">Five Strategies to Optimize Cloud Security
+                                        in 2019</a></h3>
+                                <span class="post-date">March 17, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="blog-post-item">
+                            <div class="blog-post-thumb">
+                                <a href="blog-details.html"><img src="{% static 'assets/img/blog/blog_thumb02.jpg' %}"
+                                        alt="img"></a>
+                            </div>
+                            <div class="blog-post-content">
+                                <h3 class="title"><a href="blog-details.html">Technology Takeover: How to Secure IoT
+                                        Environments</a></h3>
+                                <span class="post-date">March 17, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="blog-post-item">
+                            <div class="blog-post-thumb">
+                                <a href="blog-details.html"><img src="{% static 'assets/img/blog/blog_thumb03.jpg' %}"
+                                        alt="img"></a>
+                            </div>
+                            <div class="blog-post-content">
+                                <h3 class="title"><a href="blog-details.html">The Challenge of Real-Time Cyber
+                                        Protection</a></h3>
+                                <span class="post-date">March 17, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="blog-post-item">
+                            <div class="blog-post-thumb">
+                                <a href="blog-details.html"><img src="{% static 'assets/img/blog/blog_thumb04.jpg' %}"
+                                        alt="img"></a>
+                            </div>
+                            <div class="blog-post-content">
+                                <h3 class="title"><a href="blog-details.html">Cybersecurity Attacks & the Transportation
+                                        Industry</a></h3>
+                                <span class="post-date">March 17, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3">
+                        <div class="blog-post-item">
+                            <div class="blog-post-thumb">
+                                <a href="blog-details.html"><img src="{% static 'assets/img/blog/blog_thumb05.jpg' %}"
+                                        alt="img"></a>
+                            </div>
+                            <div class="blog-post-content">
+                                <h3 class="title"><a href="blog-details.html">Technology Takeover to Secure IoT
+                                        Environments</a></h3>
+                                <span class="post-date">March 17, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- blog-area-end -->
+
+        <!-- faq-area -->
+        <!-- <section class="faq-area faq-padding faq-two-padding">
+            <div class="container">
+                <div class="row justify-content-center justify-content-xl-between">
+                    <div class="col-xl-4 col-lg-8">
+                        <div class="section-title text-center text-xl-start mb-40">
+                            <h2 class="title">Here Are the Most Common Questions From Clients</h2>
+                        </div>
+                        <div class="faq-btn text-center text-xl-start">
+                            <a href="contact.html" class="btn">
+                                <span class="text">Ask question</span>
+                                <span class="shape"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-10">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        01. How Is Encryption Different From Hacking?
+                                        <span class="line"></span>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                                            quo minus id quod facere maxime placeat possimus, omnis voluptas assumenda
+                                            est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
+                                            debitis aut rerum necessitatibus saepe eveniet voluptates</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        02. What Steps Will You Take to Secure Your Server?
+                                        <span class="line"></span>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                                            quo minus id quod facere maxime placeat possimus, omnis voluptas assumenda
+                                            est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
+                                            debitis aut rerum necessitatibus saepe eveniet voluptates</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        03. What Is Firewall & Why It Is Used?
+                                        <span class="line"></span>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                                            quo minus id quod facere maxime placeat possimus, omnis voluptas assumenda
+                                            est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
+                                            debitis aut rerum necessitatibus saepe eveniet voluptates</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        04. Do Mobile Devices Present Security Risk?
+                                        <span class="line"></span>
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                                            quo minus id quod facere maxime placeat possimus, omnis voluptas assumenda
+                                            est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
+                                            debitis aut rerum necessitatibus saepe eveniet voluptates</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFive" aria-expanded="false"
+                                        aria-controls="collapseFive">
+                                        05. How Is Encryption Different From Hacking?
+                                        <span class="line"></span>
+                                    </button>
+                                </h2>
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                                            quo minus id quod facere maxime placeat possimus, omnis voluptas assumenda
+                                            est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
+                                            debitis aut rerum necessitatibus saepe eveniet voluptates</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingSix">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        06. What Are the Costs of a Cyber Attack?
+                                        <span class="line"></span>
+                                    </button>
+                                </h2>
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+                                            quo minus id quod facere maxime placeat possimus, omnis voluptas assumenda
+                                            est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis
+                                            debitis aut rerum necessitatibus saepe eveniet voluptates</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+        <!-- faq-area-end -->
+
+    </main>
+    <!-- main-area-end -->
+
+
+    <!-- footer-start -->
+    <footer class="footer-area footer-bg" data-background="assets/img/bg/footer_bg.jpg' %}">
+        <div class="container">
+            <!-- <div class="footer-top-wrap">
+                <div class="row justify-content-between">
+                    
+            </div>
+            <div class="copyright-wrap">
+                <p class="copyright-text">Copyright ©2023 Design By <span>ThemeDox</span></p>
+            </div> -->
+        </div>
+    </footer>
+    <!-- footer-start-end -->
+
+
+
+    <!-- JS here -->
+    <script src="{% static 'assets/js/vendor/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.odometer.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.appear.js' %}"></script>
+    <script src="{% static 'assets/js/particles.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/ajax-form.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/app.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+
+<!-- Mirrored from themedox.com/demo/cycure/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2024 12:36:36 GMT -->
+
+</html>

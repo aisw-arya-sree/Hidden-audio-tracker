@@ -1,0 +1,60 @@
+{% extends "COMMON/commonBase.html" %}
+{% block header %}
+{% load static %}
+<main class="main-area fix">
+    <!-- breadcrumb-area -->
+    <section class="breadcrumb-area">
+        <div class="breadcrumb-bg" data-background="{% static 'assets/img/bg/breadcrumb_bg.png' %}"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="breadcrumb-content text-center">
+                        <h3 class="title">Login Now</h3>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/index">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Login Now</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="contact-area">
+        <!-- <div id="map" data-background="assets/img/bg/map.jpg' %}"></div> -->
+        <div class="contact-form-wrap">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-5 col-lg-7 col-md-9 col-sm-10">
+                        <div class="section-title text-center mb-50">
+                            <h2 class="title">Welcome Back</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xxl-8 col-xl-9 col-lg-10">
+                        <form class="contact-form text-center" method="post">
+                            {% csrf_token %}
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-grp">
+                                        <input type="email" required placeholder="Enter Email" name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-grp">
+                                        <input type="password" required placeholder="Enter Password" name="password">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn">LOGIN</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% endblock %}

@@ -1,0 +1,147 @@
+{% extends "USER/userBase.html" %}
+{% block header %}
+{% load static %}
+<style>
+    /* Image Upload */
+
+    #file-input {
+        display: none;
+    }
+
+    #img {
+        cursor: pointer;
+        height: 150px;
+        width: 150px;
+        padding: 10px;
+        border-radius: 100px;
+    }
+
+    article,
+    aside,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+
+    /* Image upload */
+</style>
+
+<main class="main-area fix">
+    <!-- breadcrumb-area -->
+    <section class="breadcrumb-area">
+        <div class="breadcrumb-bg" data-background="{% static 'assets/img/bg/breadcrumb_bg.png' %}"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="breadcrumb-content text-center">
+                        <h3 class="title">Update Profile</h3>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/userHome">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Update Profile</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="contact-area">
+        <!-- <div id="map" data-background="assets/img/bg/map.jpg' %}"></div> -->
+        <div class="contact-form-wrap">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-5 col-lg-7 col-md-9 col-sm-10">
+                        <div class="section-title text-center">
+                            <!-- <h2 class="title">Fill your details</h2> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xxl-8 col-xl-9 col-lg-10">
+                        <form class="contact-form text-center" method="post" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="image-upload text-center" style="margin-top: -30px;">
+                                <label for="file-input">
+                                    <img id="img" src="/static/media/{{data.image}}" alt="Upload Image"
+                                        title="Upload Image" style="margin: auto" />
+                                </label>
+                                <p>Choose Image</p>
+                                <input id="file-input" onchange="readURL(this)" name="imgfile" type="file" />
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-grp">
+                                        <input type="text" value="{{data.name}}" required placeholder="Enter Name"
+                                            name="name">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-grp">
+                                        <input type="email" value="{{data.email}}" required placeholder="Enter Email"
+                                            name="email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-grp">
+                                        <select name="gender" id="" style="color: #6B7885;">
+                                            <option selected value="{{data.gender}}">{{data.gender}}</option>
+                                            <option value="Male">Male</option>
+                                            <option value="Female">Female</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-grp">
+                                        <input type="text" value="{{data.dob}}" onfocus="(this.type='date')"
+                                            onblur="(this.type='text')" required placeholder="Date Of Birth" name="dob"
+                                            max="{{current_date}}">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-grp">
+                                        <input type="text" maxlength="10" minlength="10" required
+                                            placeholder="Enter Phone" value="{{data.phone}}" pattern="[6789][0-9]{9}"
+                                            name="phone">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-grp">
+                                        <input type="password" placeholder="Enter Password" name="password">
+                                    </div>
+                                </div>
+                                <div class="form-grp">
+                                    <textarea name="address" id="message" required
+                                        placeholder="Enter Your Address...">{{data.address}}</textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn">UPDATE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $("#img").attr("src", e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+
+    {% endblock %}

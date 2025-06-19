@@ -1,0 +1,217 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="">
+
+<!-- Mirrored from themedox.com/demo/cycure/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2024 12:36:57 GMT -->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>SecureBlendX</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'assets/img/favicon.png' %}">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/odometer.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/default.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+</head>
+
+<body>
+
+    <!-- preloader -->
+    <div id="preloader">
+        <div id="loading-center">
+            <div id="loading-center-absolute">
+                <div class="object" id="object_one"></div>
+                <div class="object" id="object_two"></div>
+                <div class="object" id="object_three"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader-end -->
+
+    <!-- Scroll-top -->
+    <button class="scroll-top scroll-to-target" data-target="html">
+        <i class="fas fa-angle-up"></i>
+    </button>
+    <!-- Scroll-top-end-->
+
+    <!-- header-area -->
+    <header>
+        <div id="sticky-header" class="menu-area transparent-header">
+            <div class="container custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
+                        <div class="menu-wrap">
+                            <nav class="menu-nav">
+                                <div class="logo">
+                                    <a href="/index"> <h2 style="color: goldenrod;">SecureBlendX</h2></a>
+                                </div>
+                                <div class="navbar-wrap main-menu d-none d-lg-flex">
+                                    <ul class="navigation">
+                                        <li><a href="/index">Home</a></li>
+                                        <li><a href="/register">Register</a></li>
+                                        <li><a href="/login">Login</a></li>
+                                    </ul>
+                                </div>
+                                <div class="header-social">
+                                    <!-- <ul>
+                                        <li><a href="#"><i class="flaticon-facebook"></i></a></li>
+                                        <li><a href="#"><i class="flaticon-twitter"></i></a></li>
+                                        <li><a href="#"><i class="flaticon-linkedin"></i></a></li>
+                                    </ul> -->
+                                </div>
+                                <div class="offcanvas-btn">
+                                    <!-- <a href="#"><img src="{% static 'assets/img/icons/dots.png' %}" alt="Icon"></a> -->
+                                </div>
+                            </nav>
+                        </div>
+                        <!-- Mobile Menu  -->
+                        <div class="mobile-menu">
+                            <nav class="menu-box">
+                                <div class="close-btn"><i class="fas fa-times"></i></div>
+                                <div class="nav-logo"><a href="index.html"><img
+                                            src="{% static 'assets/img/logo/logo.png' %}" alt="" title=""></a>
+                                </div>
+                                <div class="menu-outer">
+                                    <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                                </div>
+                                <div class="social-links">
+                                    <ul class="clearfix">
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="menu-backdrop"></div>
+                        <!-- End Mobile Menu -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- offCanvas-start -->
+        <div class="offCanvas-wrap">
+            <div class="offCanvas-toggle"><img src="{% static 'assets/img/icons/cross.svg' %}" alt="icon"></div>
+            <div class="offCanvas-body">
+                <div class="offCanvas-content">
+                    <h3 class="title">Digital safety <span>starts here</span> for both commercial and personal</h3>
+                    <!-- <p>Nam libero tempore, cum soluta nobis eligendi cumque quod placeat facere possimus assumenda omnis dolor repellendu sautem temporibus officiis</p> -->
+                </div>
+                <div class="offcanvas-contact footer-contact-info">
+                    <h4 class="number">+1 488 246 5357</h4>
+                    <h4 class="email">cycure.agency@mail.com</h4>
+                    <p>3828 Delmas Terrace, Culver City, <br> CA, United States</p>
+                    <ul class="footer-social list-wrap">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="offCanvas-overlay"></div>
+        <!-- offCanvas-end -->
+    </header>
+    <!-- header-area-end -->
+
+    {% block header %}
+    {% endblock %}
+
+
+    <!-- footer-start -->
+    <footer class="footer-area footer-bg" data-background="{% static 'assets/img/bg/footer_bg.jpg' %}">
+        <div class="container">
+            <div class="footer-top-wrap">
+                <div class="row justify-content-between">
+                    <div class="col-xl-3 col-lg-4 col-sm-6">
+                        <div class="footer-widget">
+                            <!-- <div class="footer-contact-info">
+                                <h4 class="number">+1 488 246 5357</h4>
+                                <h4 class="email">cycure.agency@mail.com</h4>
+                                <p>3828 Delmas Terrace, Culver City, <br> CA, United States</p>
+                                <ul class="footer-social list-wrap">
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6 col-sm-4 column-2">
+                        <!-- <div class="footer-widget">
+                            <h4 class="fw-title">Quick Links</h4>
+                            <ul class="footer-link">
+                                <li><a href="about-us.html">About us</a></li>
+                                <li><a href="srevices.html">Case Studies</a></li>
+                                <li><a href="contact.html">Terms & Conditions</a></li>
+                                <li><a href="contact.html">Privacy Poilicy</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-6 col-sm-4 column-3">
+                        <!-- <div class="footer-widget">
+                            <h4 class="fw-title">Our Services</h4>
+                            <ul class="footer-link">
+                                <li><a href="services-details.html">Spyware Protection</a></li>
+                                <li><a href="services-details.html">Fast Cloud Backup</a></li>
+                                <li><a href="services-details.html">Database Security</a></li>
+                                <li><a href="services-details.html">Transaction Security</a></li>
+                                <li><a href="services-details.html">Spambot Shield</a></li>
+                            </ul>
+                        </div> -->
+                    </div>
+                    <div class="col-xxl-4 col-xl-3 col-lg-4 col-md-6 col-sm-7">
+                        <!-- <div class="footer-widget">
+                            <form action="#" class="newsletter-form">
+                                <div class="form-grp">
+                                    <input type="email" required placeholder="Your email address">
+                                </div>
+                                <button type="submit" class="btn">Subscribe now <span class="shape"></span></button>
+                                <p class="newsletter-alert"><span>*</span> Don't worry, we don't spam</p>
+                            </form>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-wrap">
+                <p class="copyright-text">Copyright ©2023 Design By <span>ThemeDox</span></p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer-start-end -->
+
+
+
+    <!-- JS here -->
+    <script src="{% static 'assets/js/vendor/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.odometer.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.appear.js' %}"></script>
+    <script src="{% static 'assets/js/particles.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/ajax-form.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+</body>
+
+
+</html>
