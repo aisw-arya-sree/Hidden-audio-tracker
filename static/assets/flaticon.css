@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("../fonts/flaticon8028.ttf?da0ce767f73484819ff07dc0854fe83c") format("truetype"),
+    url("../fonts/flaticon8028.woff?da0ce767f73484819ff07dc0854fe83c") format("woff"),
+    url("../fonts/flaticon8028.woff2?da0ce767f73484819ff07dc0854fe83c") format("woff2"),
+    url("../fonts/flaticon8028.eot?da0ce767f73484819ff07dc0854fe83c#iefix") format("embedded-opentype"),
+    url("../fonts/flaticon8028.svg?da0ce767f73484819ff07dc0854fe83c#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+i[class*="flaticon-"] {
+    display: block;
+    line-height: 0;
+}
+.flaticon-web-security:before {
+    content: "\f101";
+}
+.flaticon-admin:before {
+    content: "\f102";
+}
+.flaticon-data-protection:before {
+    content: "\f103";
+}
+.flaticon-hosting:before {
+    content: "\f104";
+}
+.flaticon-credit-card:before {
+    content: "\f105";
+}
+.flaticon-brain:before {
+    content: "\f106";
+}
+.flaticon-concept:before {
+    content: "\f107";
+}
+.flaticon-spyware:before {
+    content: "\f108";
+}
+.flaticon-cloud-computing:before {
+    content: "\f109";
+}
+.flaticon-hacker:before {
+    content: "\f10a";
+}
+.flaticon-face-recognition:before {
+    content: "\f10b";
+}
+.flaticon-backup:before {
+    content: "\f10c";
+}
+.flaticon-connection:before {
+    content: "\f10d";
+}
+.flaticon-seo-and-web:before {
+    content: "\f10e";
+}
+.flaticon-map:before {
+    content: "\f10f";
+}
+.flaticon-coding:before {
+    content: "\f110";
+}
+.flaticon-approved:before {
+    content: "\f111";
+}
+.flaticon-server:before {
+    content: "\f112";
+}
+.flaticon-warning:before {
+    content: "\f113";
+}
+.flaticon-browser:before {
+    content: "\f114";
+}
+.flaticon-facebook:before {
+    content: "\f115";
+}
+.flaticon-linkedin:before {
+    content: "\f116";
+}
+.flaticon-twitter:before {
+    content: "\f117";
+}
+.flaticon-server-1:before {
+    content: "\f118";
+}
+.flaticon-broken-shield:before {
+    content: "\f119";
+}
+.flaticon-cyber-security:before {
+    content: "\f11a";
+}
+.flaticon-assignment:before {
+    content: "\f11b";
+}
+.flaticon-blackmail:before {
+    content: "\f11c";
+}
+.flaticon-chat:before {
+    content: "\f11d";
+}
+.flaticon-open-mail:before {
+    content: "\f11e";
+}
+.flaticon-iphone:before {
+    content: "\f11f";
+}
+.flaticon-pin:before {
+    content: "\f120";
+}
